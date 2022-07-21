@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://telegra.ph/file/4e1f8603901a74db5ef5f.jpg" alt="ʜᴇɪsᴇɴ ʟᴏɢᴏ">
+  <img src="https://telegra.ph/file/cde4f3f5712398d5334e0.jpg" alt="ʜᴇɪsᴇɴ ʟᴏɢᴏ">
 </p>
 <h1 align="center">
-  <b>ƈɨռɖɛʀɛʟʟǟ™</b>
+  <b>Bᴏss Bᴀʙʏ™</b>
 </h1>
 
 
