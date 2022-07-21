@@ -15,6 +15,8 @@ class script(object):
 - 𝗢𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲 𝗰𝗼𝗱𝗲
 - Source - <a href=https://t.me/Heyboy2004>Cᴏɴᴛᴀᴄᴛ</a>
 
+    ENGLISHSPELL_TXT = f"<b>𝖲ᴏʀʀʏ 𝖭ᴏ 𝖥ɪʟᴇ𝗌 𝖶ᴇʀᴇ 𝖥ᴏᴜɴᴅ.\n\n𝖢ʜᴇᴄᴋ 𝖸ᴏᴜʀ 𝖲ᴘᴇʟʟɪɴɢ ɪɴ 𝖦ᴏᴏɢʟᴇ ᴀɴᴅ 𝖳ʀʏ 𝖠ɢᴀɪɴ. ♻️\n\n𝖱ᴇᴀᴅ 𝖨ɴ𝗌ᴛʀᴜᴄᴛɪᴏɴ𝗌 ғᴏʀ ʙᴇᴛᴛᴇʀ 𝖱ᴇ𝗌ᴜʟᴛ𝗌 👇🏻</b>"
+
 <b>DEVS:</b>
 - <a href=https://t.me/Heyboy2004>𝘾𝙍𝙀𝘿𝙄𝙏𝙊𝙍</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
