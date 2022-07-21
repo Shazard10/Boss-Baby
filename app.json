@@ -54,6 +54,14 @@
             "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
             "required": false
         },
+        "SUPPORT_CHAT": {
+            "description": "Username of a Support Group / ADMIN. ( Should be username without @ and not ID)",
+            "required": false
+        },
+        "SPELL_CHECK_REPLY": {
+            "description": "Spell check do you ",
+            "required": false
+        },
         "SINGLE_BUTTON": {
             "description": "choose b/w single or double buttons https://github.com/EvamariaTG/EvaMaria/issues/22",
             "required": false
