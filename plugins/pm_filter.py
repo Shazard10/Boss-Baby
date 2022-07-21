@@ -142,7 +142,7 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("★彡Hey Bro, നിനക്ക് ഈ സിനിമ വേണമെങ്കിൽ നീ തന്നെ റിക്വസ്റ്റ് ചെയ്യണം🤦‍♂\n\nʀᴇǫᴜᴇsᴛ ʏᴏᴜʀ ᴏᴡɴ 💕", show_alert=True)
+        return await query.answer("okDa", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
@@ -157,9 +157,10 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('<b>✯ നിങ്ങൾ ചോദിച്ച മൂവി റിലീസ് ആയിട്ടുണ്ടോ..? ആയതാണ് എങ്കില്‍ ഞങ്ങള്‍ അപ്ലോഡ് ചെയ്യുന്നതായിരിക്കും💯\n\n✯ Has the movie you asked about been released? If it is, we will upload it 🥳</b>\n\n⚠︎𝖴𝗉𝗅𝗈𝖺𝖽𝗂𝗇𝗀....🙇‍♂️')
+            k = await query.message.edit('This Movie Not Found In DataBase')
             await asyncio.sleep(10)
             await k.delete()
+
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
