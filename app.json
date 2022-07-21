@@ -58,6 +58,10 @@
             "description": "choose b/w single or double buttons https://github.com/EvamariaTG/EvaMaria/issues/22",
             "required": false
         },
+        "CUSTOM_FILE_CAPTION": {
+            "description": "A custom file caption for your files. formatable with , file_name, file_caption, file_size, Read Readme.md for better understanding.",
+            "required": false
+        },
         "UPSTREAM_REPO": {
             "description": " Your repo",
             "required": false
