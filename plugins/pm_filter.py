@@ -805,7 +805,7 @@ async def advantage_spell_chok(msg):
             ],[   
             InlineKeyboardButton('🔍 ꜱᴇᴀʀᴄʜ ɢᴏᴏɢʟᴇ 🔍', url=f'https://google.com/search?q={msg.text.replace(" ", "+")}')
         ]]        
-        k=await msg.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))    
+        k=await msg.reply_text(reply_markup=InlineKeyboardMarkup(btn))    
         await asyncio.sleep(20)
         await k.delete()
         await msg.delete()
@@ -840,7 +840,7 @@ async def advantage_spell_chok(msg):
             ],[   
             InlineKeyboardButton('🔍 ꜱᴇᴀʀᴄʜ ɢᴏᴏɢʟᴇ 🔍', url=f'https://google.com/search?q={msg.text.replace(" ", "+")}')
         ]]        
-        k=await msg.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))    
+        k=await msg.reply_text(reply_markup=InlineKeyboardMarkup(btn))    
         await asyncio.sleep(20)
         await k.delete()
         await msg.delete()
