@@ -547,38 +547,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "mal":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='try')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.MAL_TXT,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-        
-    elif query.data == "tml":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='try')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.TML_TXT,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-        
-    elif query.data == "eng":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='try')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.ENG_TXT,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
+
     elif query.data == "extra":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
