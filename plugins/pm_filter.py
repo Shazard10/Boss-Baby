@@ -106,7 +106,7 @@ async def next_page(bot, query):
             [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Auto_imdb_sha_bot?")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="neosub")]
+            [InlineKeyboardButton(f"۞ {search} ۞",callback_data="neosub")]
         )             
     elif off_set is None:
         btn.append([InlineKeyboardButton("⎙ᴘᴀɢᴇ", callback_data="pages"),
@@ -114,7 +114,7 @@ async def next_page(bot, query):
                     InlineKeyboardButton("ɴᴇxᴛ➪", callback_data=f"next_{req}_{key}_{n_offset}")])
         btn.append([InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Auto_imdb_sha_bot?")])
         btn.insert(0,
-            [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="neosub")]
+            [InlineKeyboardButton(f"۞ {search} ۞",callback_data="neosub")]
         )             
     else:
         btn.append(
@@ -128,7 +128,7 @@ async def next_page(bot, query):
             [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Auto_imdb_sha_bot?")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="neosub")]
+            [InlineKeyboardButton(f"۞ {search} ۞",callback_data="neosub")]
         )             
     try:
         await query.edit_message_reply_markup(
@@ -372,7 +372,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{files.file_name}"
         buttons = [[
-            InlineKeyboardButton('🎭 𝗠𝗢𝗩𝗜𝗘𝗦 𝗚𝗥𝗢𝗨𝗣 🎭', url='https://t.me/new_movies_group_2021')
+            InlineKeyboardButton('𖣘 𝗠𝗢𝗩𝗜𝗘𝗦 𝗚𝗥𝗢𝗨𝗣 𖣘', url='https://t.me/new_movies_group_2021')
          ]]
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
@@ -419,7 +419,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         buttons = [[
-            InlineKeyboardButton('🎭 𝗠𝗢𝗩𝗜𝗘𝗦 𝗚𝗥𝗢𝗨𝗣 🎭', url='https://t.me/new_movies_group_2021')
+            InlineKeyboardButton('𖣘 𝗠𝗢𝗩𝗜𝗘𝗦 𝗚𝗥𝗢𝗨𝗣 𖣘', url='https://t.me/new_movies_group_2021')
          ]]
         await query.answer()
         await client.send_cached_media(
@@ -730,7 +730,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Auto_imdb_sha_bot?")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="neosub")]
+            [InlineKeyboardButton(f"۞ {search} ۞",callback_data="neosub")]
         )             
     else:
         btn.append(
@@ -740,7 +740,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Auto_imdb_sha_bot?")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="neosub")]
+            [InlineKeyboardButton(f"۞ {search} ۞",callback_data="neosub")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
