@@ -732,10 +732,7 @@ async def auto_filter(client, msg, spoll=False):
         btn.insert(0,
             [InlineKeyboardButton(f"۞ {search} ۞",callback_data="neosub")]
         )             
-    else:
-        btn.append(
-            [InlineKeyboardButton(text="🚫 ᴍᴏʀᴇ ᴘᴀɢᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ 🚫", callback_data="reqst11")]
-        )             
+    else:     
         btn.append(
              [InlineKeyboardButton("〄 𝙷𝙾𝚆 𝚃𝙾 𝙶𝙴𝚃 𝙼𝙾𝚅𝙸𝙴𝚂 〄",callback_data="seriess")]
         )
