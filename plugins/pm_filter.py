@@ -114,7 +114,7 @@ async def next_page(bot, query):
                     InlineKeyboardButton("ɴᴇxᴛ➪", callback_data=f"next_{req}_{key}_{n_offset}")])
         btn.append([InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Auto_imdb_sha_bot?")])
         btn.insert(0,
-            [InlineKeyboardButton(f"۞ {search} ۞",callback_data="neosub")]
+            [InlineKeyboardButton(f"۞ <b>{search}</b> ۞",callback_data="neosub")]
         )             
     else:
         btn.append(
@@ -493,8 +493,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "reqst11":
         await query.answer(f"彡Hey {query.from_user.first_name} Bro ഫയൽസ് ലിങ്ക് ബട്ടനിൽ മാത്രം ക്ലിക്ക് ചെയ്യൂ 😒 \n\n Just Try It 😂",show_alert=True)        
 
-    elif query.data == "try":
-        await query.answer(f"𝖦𝗈 𝗍𝗈 𝖦𝗈𝗈𝗀𝗅𝖾 ➪ 𝖺𝗇𝖽 𝗍𝗒𝗉𝖾 𝖼𝗈𝗋𝗋𝖾𝖼𝗍 𝗌𝗉𝖾𝗅𝗅𝗂𝗇𝗀 ✍︎",show_alert=True)        
+    elif query.data == "seriess":
+        await query.answer(f"<u>✪ 𝐇𝐎𝐖 𝐓𝐎 𝐆𝐄𝐓 𝐓𝐇𝐄 𝐌𝐎𝐕𝐈𝐄 ✪</u>\n\n✯ 𝗦𝘁𝗲𝗽 1 :  𝖲𝖾𝗇𝖽 𝗍𝗁𝖾 𝗇𝖺𝗆𝖾 𝗈𝖿 𝗍𝗁𝖾 𝖬𝗈𝗏𝗂𝖾 𝗒𝗈𝗎 𝗐𝖺𝗇𝗍 𝗍𝗈 𝗍𝗁𝗂𝗌 𝗀𝗋𝗈𝗎𝗉\n\n✯ 𝗦𝘁𝗲𝗽 2 : 𝖢𝗅𝗂𝖼𝗄 𝗈𝗇 𝗍𝗁𝖾 𝖡𝗎𝗍𝗍𝗈𝗇 𝗈𝖿 𝗍𝗁𝖾 𝖬𝗈𝗏𝗂𝖾 𝗒𝗈𝗎 𝗐𝖺𝗇𝗍\n\n✯ 𝗦𝘁𝗲𝗽 3 : 𝖳𝗁𝖾𝗇 𝖢𝗅𝗂𝖼𝗄 𝗦𝘁𝗮𝗿𝘁 𝗈𝗇 𝗍𝗁𝖾 𝖡𝗈𝗍 𝖺𝗇𝖽 𝗒𝗈𝗎 𝗐𝗂𝗅𝗅 𝗀𝖾𝗍 𝗍𝗁𝖾 𝖬𝗈𝗏𝗂𝖾",show_alert=True)      
 
     elif query.data == "tipss":
         await query.answer(f"𝖦𝗈 𝗍𝗈 𝖦𝗈𝗈𝗀𝗅𝖾 ➪ 𝖺𝗇𝖽 𝗍𝗒𝗉𝖾 𝖼𝗈𝗋𝗋𝖾𝖼𝗍 𝗌𝗉𝖾𝗅𝗅𝗂𝗇𝗀 ✍︎",show_alert=True)        
