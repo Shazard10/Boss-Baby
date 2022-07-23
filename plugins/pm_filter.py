@@ -100,7 +100,7 @@ async def next_page(bot, query):
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("🔙ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"{round(int(offset)/10)+1} - {round(total/10)}🔖", callback_data="pages")]
+             InlineKeyboardButton(f"{round(int(offset)/10)+1} - {round(total/10)}", callback_data="pages")]
         )
         btn.append(
             [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Auto_imdb_sha_bot?")]
@@ -110,7 +110,7 @@ async def next_page(bot, query):
         )             
     elif off_set is None:
         btn.append([InlineKeyboardButton("⎙ᴘᴀɢᴇ", callback_data="pages"),
-                    InlineKeyboardButton(f"{round(int(offset)/10)+1} - {round(total/10)}🔖", callback_data="pages"),
+                    InlineKeyboardButton(f"{round(int(offset)/10)+1} - {round(total/10)}", callback_data="pages"),
                     InlineKeyboardButton("ɴᴇxᴛ➪", callback_data=f"next_{req}_{key}_{n_offset}")])
         btn.append([InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Auto_imdb_sha_bot?")])
         btn.insert(0,
@@ -120,7 +120,7 @@ async def next_page(bot, query):
         btn.append(
             [
                 InlineKeyboardButton("🔙ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"{round(int(offset)/10)+1} - {round(total/10)}🔖", callback_data="pages"),
+                InlineKeyboardButton(f"{round(int(offset)/10)+1} - {round(total/10)}", callback_data="pages"),
                 InlineKeyboardButton("ɴᴇxᴛ➪", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
