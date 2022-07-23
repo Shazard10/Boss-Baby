@@ -103,7 +103,7 @@ async def next_page(bot, query):
              InlineKeyboardButton(f"{round(int(offset)/10)+1} - {round(total/10)}", callback_data="pages")]
         )
         btn.append(
-            [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Auto_imdb_sha_bot?")]
+            [InlineKeyboardButton(f"〄 𝙷𝙾𝚆 𝚃𝙾 𝙶𝙴𝚃 𝙼𝙾𝚅𝙸𝙴𝚂 〄",callback_data="seriess")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"۞ {search} ۞",callback_data="neosub")]
@@ -112,9 +112,9 @@ async def next_page(bot, query):
         btn.append([InlineKeyboardButton("⎙ᴘᴀɢᴇ", callback_data="pages"),
                     InlineKeyboardButton(f"{round(int(offset)/10)+1} - {round(total/10)}", callback_data="pages"),
                     InlineKeyboardButton("ɴᴇxᴛ➪", callback_data=f"next_{req}_{key}_{n_offset}")])
-        btn.append([InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Auto_imdb_sha_bot?")])
+        btn.append([InlineKeyboardButton(f"〄 𝙷𝙾𝚆 𝚃𝙾 𝙶𝙴𝚃 𝙼𝙾𝚅𝙸𝙴𝚂 〄",callback_data="seriess")])
         btn.insert(0,
-            [InlineKeyboardButton(f"۞ <b>{search}</b> ۞",callback_data="neosub")]
+            [InlineKeyboardButton(f"۞ {search} ۞",callback_data="neosub")]
         )             
     else:
         btn.append(
@@ -125,7 +125,7 @@ async def next_page(bot, query):
             ],
         )
         btn.append(
-            [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Auto_imdb_sha_bot?")]
+            [InlineKeyboardButton(f"〄 𝙷𝙾𝚆 𝚃𝙾 𝙶𝙴𝚃 𝙼𝙾𝚅𝙸𝙴𝚂 〄",callback_data="seriess")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"۞ {search} ۞",callback_data="neosub")]
@@ -727,7 +727,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton("⎙ᴘᴀɢᴇ", callback_data="pages"),InlineKeyboardButton(text=f"1 - {round(int(total_results)/10)}", callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ➪", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.append(
-            [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Auto_imdb_sha_bot?")]
+            [InlineKeyboardButton(f"〄 𝙷𝙾𝚆 𝚃𝙾 𝙶𝙴𝚃 𝙼𝙾𝚅𝙸𝙴𝚂 〄",callback_data="seriess")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"۞ {search} ۞",callback_data="neosub")]
@@ -737,7 +737,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text="🚫 ᴍᴏʀᴇ ᴘᴀɢᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ 🚫", callback_data="reqst11")]
         )             
         btn.append(
-            [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Auto_imdb_sha_bot?")]
+             [InlineKeyboardButton(f"〄 𝙷𝙾𝚆 𝚃𝙾 𝙶𝙴𝚃 𝙼𝙾𝚅𝙸𝙴𝚂 〄",callback_data="seriess")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"۞ {search} ۞",callback_data="neosub")]
