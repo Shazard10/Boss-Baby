@@ -210,15 +210,11 @@ async def start(client, message):
     files_ = await get_file_details(file_id)           
     if not files_:
         pre, file_id = ((base64.urlsafe_b64decode(data + "=" * (-len(data) % 4))).decode("ascii")).split("_", 1)
-    buttons = [[
-            InlineKeyboardButton('𖣘 𝗠𝗢𝗩𝗜𝗘𝗦 𝗚𝗥𝗢𝗨𝗣 𖣘', url='https://t.me/new_movies_group_2021')
-               ]]
         try:
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
-                reply_markup=InlineKeyboardMarkup(buttons),
                 )
             filetype = msg.media
             file = getattr(msg, filetype)
